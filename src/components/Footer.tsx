@@ -83,7 +83,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 py-8 border-b border-border/50"
+          className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-10 py-8 border-b border-border/50"
         >
           <div className="col-span-2 md:col-span-1">
             <span className="font-display text-lg font-bold tracking-[0.2em] uppercase text-foreground">

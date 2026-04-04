@@ -127,7 +127,7 @@ const ExperienceCarousel = () => {
         </motion.div>
 
         {/* Premium Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 mb-10">
           {/* Large featured card - spans 7 columns */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -138,7 +138,7 @@ const ExperienceCarousel = () => {
           >
             <motion.div
               whileHover={{ y: -6 }}
-              className="relative h-[500px] md:h-[600px] overflow-hidden rounded-2xl"
+              className="relative h-[350px] sm:h-[450px] md:h-[600px] overflow-hidden rounded-2xl"
             >
               {/* Card image */}
               <img
@@ -201,7 +201,7 @@ const ExperienceCarousel = () => {
                 initial={{ opacity: 0, x: 30 }}
                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
                 transition={{ delay: 0.2 + idx * 0.1, duration: 0.6 }}
-                className="group cursor-pointer h-[280px]"
+                className="group cursor-pointer h-[220px] sm:h-[280px]"
                 onClick={() => setSelectedCard(card.id)}
               >
                 <motion.div
@@ -251,14 +251,14 @@ const ExperienceCarousel = () => {
         </div>
 
         {/* Bottom Grid - 3 cards equal width */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mb-10">
           {experienceCards.slice(3).map((card, idx) => (
             <motion.div
               key={card.id}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ delay: 0.3 + idx * 0.1, duration: 0.6 }}
-              className="group cursor-pointer h-[350px]"
+              className="group cursor-pointer h-[280px] sm:h-[350px]"
               onClick={() => setSelectedCard(card.id)}
             >
               <motion.div
@@ -325,10 +325,10 @@ const ExperienceCarousel = () => {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
-                className="bg-card rounded-2xl overflow-hidden max-w-2xl w-full max-h-[80vh] flex flex-col"
+                className="bg-card rounded-2xl overflow-hidden max-w-2xl w-full max-h-[85vh] sm:max-h-[80vh] flex flex-col"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="relative h-[400px] overflow-hidden">
+                <div className="relative h-[300px] sm:h-[400px] overflow-hidden">
                   <img
                     src={experienceCards.find((c) => c.id === selectedCard)?.image}
                     alt=""

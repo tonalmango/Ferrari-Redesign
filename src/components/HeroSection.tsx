@@ -102,7 +102,7 @@ const HeroSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[120vh] w-full overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_rgb(127_29_29_/_0.8)_0%,_rgb(127_29_29_/_0.4)_40%,_transparent_100%)] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-48 after:bg-gradient-to-b after:from-transparent after:via-background/50 after:to-background after:pointer-events-none"
+      className="relative h-screen sm:h-[110vh] md:h-[120vh] w-full overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_rgb(127_29_29_/_0.8)_0%,_rgb(127_29_29_/_0.4)_40%,_transparent_100%)] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-24 sm:after:h-32 md:after:h-48 after:bg-gradient-to-b after:from-transparent after:via-background/50 after:to-background after:pointer-events-none"
     >
       <SmokeParticles />
 

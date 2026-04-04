@@ -21,7 +21,7 @@ const ModelsShowcase = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
 
   return (
-    <section id="models" ref={containerRef} className="relative h-[300vh]">
+    <section id="models" ref={containerRef} className="relative h-[250vh] sm:h-[280vh] md:h-[300vh]">
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
         <div className="section-padding mb-12">
           <motion.p

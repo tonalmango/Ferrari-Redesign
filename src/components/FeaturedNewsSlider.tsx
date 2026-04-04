@@ -121,7 +121,7 @@ const FeaturedNewsSlider = () => {
           News
         </motion.p>
 
-        <div className="relative grid gap-12 md:gap-16 md:grid-cols-[1fr_1.05fr] items-center min-h-[min(70vh,520px)]">
+        <div className="relative grid gap-8 md:gap-16 md:grid-cols-[1fr_1.05fr] items-center min-h-[min(60vh,400px)] md:min-h-[min(70vh,520px)]">
           <button
             type="button"
             aria-label="Previous slide"
