@@ -3,10 +3,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
-  "projectSettings": {
-    "rootDirectory": ".",
-    "outputDirectory": "dist"
-  },
   "env": {
     "NODE_ENV": "production"
   },
