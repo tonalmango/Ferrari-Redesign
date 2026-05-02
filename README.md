@@ -138,6 +138,35 @@ npm run build
 npm run preview
 ```
 
+## 🌐 Deployment
+
+### Deploy to Vercel (Recommended)
+
+This project is optimized for Vercel with automatic configuration:
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel
+```
+
+Or:
+1. Push to GitHub
+2. Go to [Vercel Dashboard](https://vercel.com)
+3. Click "New Project"
+4. Select the GitHub repository
+5. Click "Deploy"
+
+**See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.**
+
+### Other Platforms
+
+- **Netlify**: Drag and drop `dist/` folder
+- **GitHub Pages**: Configure GitHub Actions for auto-deployment
+- **Docker**: Create Dockerfile based on Node.js image
+
 ## 📂 Project Structure
 
 ```
